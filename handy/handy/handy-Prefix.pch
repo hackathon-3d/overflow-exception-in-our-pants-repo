@@ -1,0 +1,38 @@
+//
+// Prefix header for all source files of the 'handy' target in the 'handy' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <FlatUIKit/FlatUIKit.h>
+    #import "Macros.h"
+#endif
+
+#define LENGTH_IN_FEET_PER_UNIT_SHOE_SIZE_MEN 0.03125
+#define LENGTH_IN_FEET_PER_UNIT_SHOE_SIZE_WOMEN 0.0208333
+
+#define FINISH_OPTION_FLAT 0
+#define FINISH_OPTION_EGGSHELL 1
+#define FINISH_OPTION_SATIN 2
+#define FINISH_OPTION_SEMI_GLOSS 3
+#define FINISH_OPTION_HIGH_GLOSS 4
+
+#define PRIMER_OPTION_NONE 0
+#define PRIMER_OPTION_MIXED 1
+#define PRIMER_OPTION_SEPARATE 2
+
+#define BEHR @"Behr"
+#define VALSPAR @"Valspar"
+#define SHERMAN_WILLIAMS @"Sherman Williams"
+
+#define AVG_SQUARE_FEET_PER_GALLON 350
+#define AVG_COST_OF_PRIMER_PER_GALLON 20.00
+
+
